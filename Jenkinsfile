@@ -83,8 +83,7 @@ stage('DT Deploy Event') {
           tagRule : tagMatchRules,
           customProperties : [
             [key: 'Jenkins Build Number', value: "${env.BUILD_ID}"],
-            [key: 'Git commit', value: "${env.GIT_COMMIT}"],
-            [key: 'App', value= "Sockshop - Carts"]
+            [key: 'Git commit', value: "${env.GIT_COMMIT}"]
           ]
         )
       }
